@@ -10,11 +10,11 @@ function Movie({id, coverImg, title, year, summary, genres}) {
                 <h2 className={styles.movie__title}>
                     <Link to={`/movie/${id}`}>{title}</Link>
                 </h2>
-            <h3 className={styles.movie__year}>{year}</h3>
-            <p>{summary.length > 250? `${summary.slice(0, 250)} ...` : summary}</p>
-            <ul className={styles.movie__genres}> 
-                {genres.map((g) => <li key={g}>{g}</li>)}
-            </ul>
+                <h3 className={styles.movie__year}>{year}</h3>
+                <p>{summary.length > 250? `${summary.slice(0, 250)} ...` : summary}</p>
+                <ul className={styles.movie__genres}> 
+                    {genres.map((g) => <li key={g}>{g}</li>)}
+                </ul>
             </div>
         </div>
     );

@@ -10,7 +10,9 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-weight: 300;
+    font-weight: 800;
+    font-size : large;
+    color: white;
   }
   
   .movies {
